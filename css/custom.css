@@ -1,0 +1,72 @@
+body{
+    font-family: "Titillium Web", sans-serif;
+}
+/*------------- navbar css --------------*/
+.navbar{
+    background-color: #e4e6e5;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+.newsIcon{
+    color: #039FDA;
+}
+.newsLink:hover{
+    border-bottom: 2px solid #039FDA;
+}
+.eventsIcon{
+    color: #00C167;
+}
+.eventsLink:hover{
+    border-bottom: 2px solid #00C167;
+}
+.roadWorksIcon{
+    color: #0466BF;
+}
+.raodWorksLink:hover{
+    border-bottom: 2px solid #0466BF;
+}
+.weatherIcon{
+    color: orange;
+}
+.weatherLink:hover{
+    border-bottom: 2px solid orange;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+/*------------ main banner css ------------*/
+.mainBanner{
+    background-image: url("../images/bg1.jpg");
+    background-size: cover;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding: 10% !important;
+    background-position: center center;
+    color: white;
+}
+/*------------ first section css -----------*/
+.firstSection{
+    background-color: #039FDA;
+    padding: 10%;
+}
+/*------------ second section css -----------*/
+.secondSection{
+    background-color: #00C167;
+    padding: 10%;
+}
+/*------------ third section css -----------*/
+.thirdSection{
+    background-color: #0466BF;
+    padding: 10%;
+}
+/*------------ footer css --------------*/
+footer{
+    background-color: #e4e6e5;
+    padding: 10%;
+}
