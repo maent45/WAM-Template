@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" ng-ap="wam">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>What's Around Me</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--- google font --->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div ng-app="">
+    <p>Name : <input type="text" ng-model="name"></p>
+    <h1>Hello {{name}}</h1>
+</div>
+
+<!--- first section --->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 firstSection">
+    <div class="container" ng-controller="NewsController as wam">
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 newsSummaryHolder" ng-repeat="news in wam.newsitems">
+            <div class="col-lg-8">
+                <img ng-src="{{news.image}}">
+            </div>
+            <div class="col-lg-4">
+                <h3 class="">{{news.title}}</h3>
+                <span><i class="fa fa-calendar"></i>&nbsp;{{news.date}}</span>
+            </div>
+        </div>
+
+        <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 newsSummaryHolder">
+            <div class="col-lg-8">
+                <img src="images/newsTestImgs/3.jpg">
+            </div>
+            <div class="col-lg-4">
+                <h3 class="">Basin Reserve flyover appeal finishes</h3>
+                <span><i class="fa fa-calendar"></i>&nbsp;27th June 2015</span>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 newsSummaryHolder">
+            <div class="col-lg-8">
+                <img src="images/newsTestImgs/3.jpg">
+            </div>
+            <div class="col-lg-4">
+                <h3 class="">Basin Reserve flyover appeal finishes</h3>
+                <span><i class="fa fa-calendar"></i>&nbsp;27th June 2015</span>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 newsSummaryHolder">
+            <div class="col-lg-8">
+                <img src="images/newsTestImgs/1.jpg">
+            </div>
+            <div class="col-lg-4">
+                <h3 class="">Basin Reserve flyover appeal finishes</h3>
+                <span><i class="fa fa-calendar"></i>&nbsp;27th June 2015</span>
+            </div>
+        </div>-->
+    </div>
+</div>
+
+<!--- second section --->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 secondSection">
+
+</div>
+
+<!--- third section --->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thirdSection">
+
+</div>
+
+<!--- fourth section --->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fourthSection">
+
+</div>
+
+<!--- footer --->
+<footer>
+    sdfsdf
+</footer>
+
+<!--- scripts --->
+<script src= "js/angular.min.js"></script>
+<script src="app.js"></script>
+<!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>-->
+</body>
+</html>
